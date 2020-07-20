@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>In Code We Trußt</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="calculator.css"> -->
+
+    <!-- <script src="https://kit.fontawesome.com/25b9d7eebc.js" crossorigin="anonymous"></script> -->
+
+    <style>
+        @import url("http://fonts.googleapis.com/css?family=Poppins:300,,400,500,600,700,800,900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #091921;
+        }
+        
+        .calculator {
+            position: relative;
+            display: grid;
+        }
+        
+        .calculator .value {
+            grid-column: span 4;
+            height: 100px;
+            text-align: right;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+        
+        .calculator span {
+            display: grid;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            background: #0c2835;
+            place-items: center;
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+        
+        .calculator span:active {
+            background: #1f1cdf;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="txt" readonly="">
+        <span class="num" onclick="document.calc.txt.value =''">C</span>
+        <span class="num" onclick="document.calc.txt.value +='x²'">x²</span>
+        <span class="num" onclick="document.calc.txt.value +='²√x'">²√x</span>
+        <span class="num" onclick="document.calc.txt.value +='÷'">÷</span>
+        <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+        <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+        <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+        <span class="num" onclick="document.calc.txt.value +='x'">x</span>
+        <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+        <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+        <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+        <span class="num" onclick="document.calc.txt.value -='-'">-</span>
+        <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+        <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+        <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+        <span class="num" onclick="document.calc.txt.value +='+'">+</span>
+        <span class="num" onclick="document.calc.txt.value +='<='"><=</span>
+        <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+        <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+        <span class="num" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+    </form>
+
+    <script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+<script>
+</script>
+
+</html>
